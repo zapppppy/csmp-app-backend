@@ -1,0 +1,200 @@
+{
+  "form": "application",
+  "fields": [
+    {
+      "name": "name",
+      "label": "Full Name / Preferred Name",
+      "type": "text",
+      "required": true,
+      "placeholder": "Your name as known in this community"
+    },
+    {
+      "name": "discord",
+      "label": "Discord Username",
+      "type": "text",
+      "required": true,
+      "placeholder": "e.g. username or @username"
+    },
+    {
+      "name": "age",
+      "label": "Age",
+      "type": "text",
+      "required": true,
+      "roles": ["head_admin", "admin"],
+      "placeholder": "How old are you?"
+    },
+    {
+      "name": "timezone",
+      "label": "Timezone",
+      "type": "text",
+      "required": true,
+      "roles": ["head_admin", "admin"],
+      "placeholder": "e.g. GMT+8, EST, AEST"
+    },
+    {
+      "name": "tenure",
+      "label": "How long have you been in this server?",
+      "type": "text",
+      "required": true,
+      "roles": ["head_admin", "admin"],
+      "placeholder": "e.g. 2 weeks, 3 months, since the beginning"
+    },
+    {
+      "name": "timezone",
+      "label": "Timezone & When You're Usually Available",
+      "type": "text",
+      "required": true,
+      "roles": ["event_lead", "event_staff"],
+      "placeholder": "e.g. GMT+8, available after 4pm on weekdays"
+    },
+    {
+      "name": "exp",
+      "label": "Relevant experience",
+      "type": "textarea",
+      "required": true,
+      "roles": ["head_admin"],
+      "min_chars": 100,
+      "placeholder": "Have you helped moderate or manage any Discord server, group chat, school club, sports team, or anything similar? Describe what you did and what you learned. No experience? That's okay — explain why you'd still be great for this role."
+    },
+    {
+      "name": "conflict",
+      "label": "Handling a conflict",
+      "type": "textarea",
+      "required": true,
+      "roles": ["head_admin"],
+      "min_chars": 80,
+      "placeholder": "Tell us about a time you helped calm down or resolve a disagreement or argument — in this server, another server, at school, or anywhere else. What happened, how did you handle it, and what was the result?"
+    },
+    {
+      "name": "exp",
+      "label": "Relevant experience",
+      "type": "textarea",
+      "required": false,
+      "roles": ["admin"],
+      "min_chars": 60,
+      "placeholder": "Have you helped moderate or manage any Discord server, group chat, school club, or anything like that? Tell us what you did. No experience? That's fine — just describe qualities that make you a good fit instead."
+    },
+    {
+      "name": "approach",
+      "label": "How you handle rule-breaking",
+      "type": "textarea",
+      "required": true,
+      "roles": ["admin"],
+      "min_chars": 80,
+      "placeholder": "If a member is breaking the rules, how do you handle it in a way that's fair? How do you stay consistent even when the person is someone you know?"
+    },
+    {
+      "name": "philosophy",
+      "label": "How would you lead a staff team?",
+      "type": "textarea",
+      "required": true,
+      "roles": ["head_admin"],
+      "min_chars": 100,
+      "placeholder": "How would you make sure staff work well together? How would you handle it if a staff member isn't doing their job, or if you disagree with another Head Admin?"
+    },
+    {
+      "name": "vision",
+      "label": "What would you improve about this server?",
+      "type": "textarea",
+      "required": true,
+      "roles": ["head_admin"],
+      "min_chars": 80,
+      "placeholder": "Give specific ideas — new channels, events, rules, systems, or changes you'd actually push for. Be realistic about what's achievable."
+    },
+    {
+      "name": "scenario",
+      "label": "Your response",
+      "type": "textarea",
+      "required": true,
+      "roles": ["head_admin", "admin"],
+      "min_chars": 80,
+      "placeholder": "Walk through exactly what you would do, step by step. Think about how it affects everyone involved and how you'd communicate what you did."
+    },
+    {
+      "name": "statement",
+      "label": "Why do you want to be this role, and why should we pick you?",
+      "type": "textarea",
+      "required": true,
+      "roles": ["head_admin", "admin"],
+      "min_chars": {
+        "head_admin": 150,
+        "admin": 100
+      },
+      "placeholder": "Tell us what motivates you to apply, what makes you a good fit, and what you'd bring to the team. Don't just say 'I'll do my best' — be specific."
+    },
+    {
+      "name": "puzzle",
+      "label": "Your answer",
+      "type": "text",
+      "required": true,
+      "roles": ["cosmetic"],
+      "placeholder": "Enter your answer in a single word or short phrase."
+    },
+    {
+      "name": "contribution",
+      "label": "What smart, interesting, or creative things have you contributed to this server?",
+      "type": "textarea",
+      "required": true,
+      "roles": ["cosmetic"],
+      "min_chars": 100,
+      "placeholder": "Give specific examples — conversations you started, knowledge you shared, things you made, problems you solved, or ways you've helped other members. Vague answers like 'I'm active and smart' will not be accepted."
+    },
+    {
+      "name": "event_exp",
+      "label": "Have you helped with or hosted any events before?",
+      "type": "textarea",
+      "required": false,
+      "roles": ["event_lead"],
+      "min_chars": 40,
+      "placeholder": "Any experience counts — online events, school events, group games, trivia nights, anything. No experience? That's fine, just tell us why you'd be good at it."
+    },
+    {
+      "name": "event_ideas",
+      "label": "Give us 2–3 event ideas you'd run if selected",
+      "type": "textarea",
+      "required": true,
+      "roles": ["event_lead"],
+      "min_chars": 60,
+      "placeholder": "Be specific — what's the event, how does it work, and why would people enjoy it? Could be trivia, game tournaments, watch-alongs, challenges, anything creative."
+    },
+    {
+      "name": "motivation",
+      "label": "Why do you want to be on the event staff team?",
+      "type": "textarea",
+      "required": true,
+      "roles": ["event_staff"],
+      "min_chars": 40,
+      "placeholder": "Tell us why you're interested and what you'd bring. Be genuine."
+    },
+    {
+      "name": "availability",
+      "label": "When are you generally available?",
+      "type": "text",
+      "required": false,
+      "roles": ["event_staff"],
+      "placeholder": "e.g. weekday evenings after school, weekends, most afternoons"
+    }
+  ],
+  "declarations": [
+    {
+      "text": "I confirm that everything I wrote in this application is true and accurate.",
+      "required": true
+    },
+    {
+      "text": "I understand that lying or exaggerating in my application will result in it being rejected and may lead to further action.",
+      "required": true
+    },
+    {
+      "text": "I agree to follow all server rules and treat everyone with respect if my application is accepted.",
+      "required": true
+    },
+    {
+      "text": "I understand that this role comes with real responsibility and I will take it seriously, not just treat it as a status symbol.",
+      "required_for_roles": ["head_admin", "admin", "cosmetic"]
+    },
+    {
+      "text": "I understand that as Head Admin I need to be consistently fair, available, and accountable — including when my friends are involved.",
+      "required_for_roles": ["head_admin"]
+    }
+  ]
+}
