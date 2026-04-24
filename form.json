@@ -1,178 +1,317 @@
 {
   "form": "application",
+  "roles": [
+    {
+      "id": "head_developer",
+      "label": "Head Developer",
+      "color": "#39ff4f"
+    },
+    {
+      "id": "developer",
+      "label": "Developer",
+      "color": "#39ff4f"
+    },
+    {
+      "id": "head_admin",
+      "label": "Head Administrator",
+      "color": "#ff8fc2"
+    },
+    {
+      "id": "admin",
+      "label": "Administrator",
+      "color": "#ef5b5b"
+    },
+    {
+      "id": "senior_moderator",
+      "label": "Senior Moderator",
+      "color": "#c8c5ff"
+    },
+    {
+      "id": "moderator",
+      "label": "Moderator",
+      "color": "#8fd8ff"
+    },
+    {
+      "id": "helper",
+      "label": "Helper",
+      "color": "#83e88f"
+    },
+    {
+      "id": "trial_moderator",
+      "label": "Trial Moderator",
+      "color": "#58d7f5"
+    },
+    {
+      "id": "head_builder",
+      "label": "Head Builder",
+      "color": "#6f7dff"
+    },
+    {
+      "id": "builder",
+      "label": "Builder",
+      "color": "#89a7ff"
+    },
+    {
+      "id": "tester",
+      "label": "Testers",
+      "color": "#7398df"
+    }
+  ],
   "fields": [
     {
       "name": "name",
       "label": "Full Name / Preferred Name",
       "type": "text",
-      "required": true,
-      "placeholder": "Your name as known in this community"
+      "required": true
     },
     {
       "name": "discord",
       "label": "Discord Username",
       "type": "text",
-      "required": true,
-      "placeholder": "e.g. username or @username"
+      "required": true
     },
     {
       "name": "age",
       "label": "Age",
       "type": "text",
-      "required": true,
-      "roles": ["head_admin", "admin"],
-      "placeholder": "How old are you?"
+      "required": true
     },
     {
       "name": "timezone",
       "label": "Timezone",
       "type": "text",
-      "required": true,
-      "roles": ["head_admin", "admin"],
-      "placeholder": "e.g. GMT+8, EST, AEST"
+      "required": true
     },
     {
       "name": "tenure",
       "label": "How long have you been in this server?",
       "type": "text",
-      "required": true,
-      "roles": ["head_admin", "admin"],
-      "placeholder": "e.g. 2 weeks, 3 months, since the beginning"
-    },
-    {
-      "name": "timezone",
-      "label": "Timezone & When You're Usually Available",
-      "type": "text",
-      "required": true,
-      "roles": ["event_lead", "event_staff"],
-      "placeholder": "e.g. GMT+8, available after 4pm on weekdays"
-    },
-    {
-      "name": "exp",
-      "label": "Relevant experience",
-      "type": "textarea",
-      "required": true,
-      "roles": ["head_admin"],
-      "min_chars": 100,
-      "placeholder": "Have you helped moderate or manage any Discord server, group chat, school club, sports team, or anything similar? Describe what you did and what you learned. No experience? That's okay — explain why you'd still be great for this role."
-    },
-    {
-      "name": "conflict",
-      "label": "Handling a conflict",
-      "type": "textarea",
-      "required": true,
-      "roles": ["head_admin"],
-      "min_chars": 80,
-      "placeholder": "Tell us about a time you helped calm down or resolve a disagreement or argument — in this server, another server, at school, or anywhere else. What happened, how did you handle it, and what was the result?"
-    },
-    {
-      "name": "exp",
-      "label": "Relevant experience",
-      "type": "textarea",
-      "required": false,
-      "roles": ["admin"],
-      "min_chars": 60,
-      "placeholder": "Have you helped moderate or manage any Discord server, group chat, school club, or anything like that? Tell us what you did. No experience? That's fine — just describe qualities that make you a good fit instead."
-    },
-    {
-      "name": "approach",
-      "label": "How you handle rule-breaking",
-      "type": "textarea",
-      "required": true,
-      "roles": ["admin"],
-      "min_chars": 80,
-      "placeholder": "If a member is breaking the rules, how do you handle it in a way that's fair? How do you stay consistent even when the person is someone you know?"
-    },
-    {
-      "name": "philosophy",
-      "label": "How would you lead a staff team?",
-      "type": "textarea",
-      "required": true,
-      "roles": ["head_admin"],
-      "min_chars": 100,
-      "placeholder": "How would you make sure staff work well together? How would you handle it if a staff member isn't doing their job, or if you disagree with another Head Admin?"
-    },
-    {
-      "name": "vision",
-      "label": "What would you improve about this server?",
-      "type": "textarea",
-      "required": true,
-      "roles": ["head_admin"],
-      "min_chars": 80,
-      "placeholder": "Give specific ideas — new channels, events, rules, systems, or changes you'd actually push for. Be realistic about what's achievable."
-    },
-    {
-      "name": "scenario",
-      "label": "Your response",
-      "type": "textarea",
-      "required": true,
-      "roles": ["head_admin", "admin"],
-      "min_chars": 80,
-      "placeholder": "Walk through exactly what you would do, step by step. Think about how it affects everyone involved and how you'd communicate what you did."
-    },
-    {
-      "name": "statement",
-      "label": "Why do you want to be this role, and why should we pick you?",
-      "type": "textarea",
-      "required": true,
-      "roles": ["head_admin", "admin"],
-      "min_chars": {
-        "head_admin": 150,
-        "admin": 100
-      },
-      "placeholder": "Tell us what motivates you to apply, what makes you a good fit, and what you'd bring to the team. Don't just say 'I'll do my best' — be specific."
-    },
-    {
-      "name": "puzzle",
-      "label": "Your answer",
-      "type": "text",
-      "required": true,
-      "roles": ["cosmetic"],
-      "placeholder": "Enter your answer in a single word or short phrase."
-    },
-    {
-      "name": "contribution",
-      "label": "What smart, interesting, or creative things have you contributed to this server?",
-      "type": "textarea",
-      "required": true,
-      "roles": ["cosmetic"],
-      "min_chars": 100,
-      "placeholder": "Give specific examples — conversations you started, knowledge you shared, things you made, problems you solved, or ways you've helped other members. Vague answers like 'I'm active and smart' will not be accepted."
-    },
-    {
-      "name": "event_exp",
-      "label": "Have you helped with or hosted any events before?",
-      "type": "textarea",
-      "required": false,
-      "roles": ["event_lead"],
-      "min_chars": 40,
-      "placeholder": "Any experience counts — online events, school events, group games, trivia nights, anything. No experience? That's fine, just tell us why you'd be good at it."
-    },
-    {
-      "name": "event_ideas",
-      "label": "Give us 2–3 event ideas you'd run if selected",
-      "type": "textarea",
-      "required": true,
-      "roles": ["event_lead"],
-      "min_chars": 60,
-      "placeholder": "Be specific — what's the event, how does it work, and why would people enjoy it? Could be trivia, game tournaments, watch-alongs, challenges, anything creative."
-    },
-    {
-      "name": "motivation",
-      "label": "Why do you want to be on the event staff team?",
-      "type": "textarea",
-      "required": true,
-      "roles": ["event_staff"],
-      "min_chars": 40,
-      "placeholder": "Tell us why you're interested and what you'd bring. Be genuine."
+      "required": true
     },
     {
       "name": "availability",
-      "label": "When are you generally available?",
+      "label": "When are you usually available?",
       "type": "text",
+      "required": true
+    },
+    {
+      "name": "experience",
+      "label": "Relevant experience",
+      "type": "textarea",
+      "required": true,
+      "min_chars": {
+        "head_developer": 100,
+        "developer": 70,
+        "head_admin": 100,
+        "admin": 80,
+        "senior_moderator": 80,
+        "moderator": 70,
+        "helper": 50,
+        "trial_moderator": 50,
+        "head_builder": 90,
+        "builder": 60,
+        "tester": 50
+      }
+    },
+    {
+      "name": "motivation",
+      "label": "Why do you want this role, and why should we pick you?",
+      "type": "textarea",
+      "required": true,
+      "min_chars": {
+        "head_developer": 140,
+        "developer": 100,
+        "head_admin": 140,
+        "admin": 110,
+        "senior_moderator": 100,
+        "moderator": 90,
+        "helper": 70,
+        "trial_moderator": 70,
+        "head_builder": 120,
+        "builder": 90,
+        "tester": 70
+      }
+    },
+    {
+      "name": "developer_skills",
+      "label": "What can you develop or maintain for CSMP?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_developer",
+        "developer"
+      ],
+      "min_chars": 90
+    },
+    {
+      "name": "developer_links",
+      "label": "Links or examples of your work",
+      "type": "textarea",
       "required": false,
-      "roles": ["event_staff"],
-      "placeholder": "e.g. weekday evenings after school, weekends, most afternoons"
+      "roles": [
+        "head_developer",
+        "developer"
+      ]
+    },
+    {
+      "name": "developer_scenario",
+      "label": "A feature breaks right before an event. What do you do?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_developer",
+        "developer"
+      ],
+      "min_chars": 90
+    },
+    {
+      "name": "developer_leadership",
+      "label": "How would you lead the development team?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_developer"
+      ],
+      "min_chars": 110
+    },
+    {
+      "name": "staff_conflict",
+      "label": "Handling a conflict",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_admin",
+        "admin",
+        "senior_moderator",
+        "moderator",
+        "helper",
+        "trial_moderator"
+      ],
+      "min_chars": 80
+    },
+    {
+      "name": "rule_response",
+      "label": "How do you handle rule-breaking?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_admin",
+        "admin",
+        "senior_moderator",
+        "moderator",
+        "trial_moderator"
+      ],
+      "min_chars": 80
+    },
+    {
+      "name": "community_support",
+      "label": "How would you help members feel welcome and supported?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "helper",
+        "trial_moderator",
+        "moderator",
+        "senior_moderator"
+      ],
+      "min_chars": 60
+    },
+    {
+      "name": "admin_vision",
+      "label": "What would you improve about this server?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_admin",
+        "admin"
+      ],
+      "min_chars": 90
+    },
+    {
+      "name": "admin_leadership",
+      "label": "How would you lead staff?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_admin"
+      ],
+      "min_chars": 110
+    },
+    {
+      "name": "senior_mod_leadership",
+      "label": "How would you support and guide other moderators?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "senior_moderator"
+      ],
+      "min_chars": 90
+    },
+    {
+      "name": "build_experience",
+      "label": "What have you built before?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_builder",
+        "builder"
+      ],
+      "min_chars": {
+        "head_builder": 100,
+        "builder": 70
+      }
+    },
+    {
+      "name": "build_portfolio",
+      "label": "Showcase 3 of your works, no more, no less",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_builder",
+        "builder"
+      ],
+      "link_count": 3
+    },
+    {
+      "name": "build_scenario",
+      "label": "A large build is behind schedule. What do you do?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_builder",
+        "builder"
+      ],
+      "min_chars": 80
+    },
+    {
+      "name": "builder_leadership",
+      "label": "How would you lead the build team?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "head_builder"
+      ],
+      "min_chars": 100
+    },
+    {
+      "name": "testing_approach",
+      "label": "How would you test new features, events, or server changes?",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "tester"
+      ],
+      "min_chars": 70
+    },
+    {
+      "name": "bug_report",
+      "label": "Write an example bug report",
+      "type": "textarea",
+      "required": true,
+      "roles": [
+        "tester"
+      ],
+      "min_chars": 80
     }
   ],
   "declarations": [
@@ -190,11 +329,16 @@
     },
     {
       "text": "I understand that this role comes with real responsibility and I will take it seriously, not just treat it as a status symbol.",
-      "required_for_roles": ["head_admin", "admin", "cosmetic"]
+      "required": true
     },
     {
-      "text": "I understand that as Head Admin I need to be consistently fair, available, and accountable — including when my friends are involved.",
-      "required_for_roles": ["head_admin"]
+      "text": "I understand that leadership roles require consistency, fairness, and accountability even when my friends are involved.",
+      "required_for_roles": [
+        "head_developer",
+        "head_admin",
+        "senior_moderator",
+        "head_builder"
+      ]
     }
   ]
 }
