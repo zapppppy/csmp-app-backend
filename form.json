@@ -1,7 +1,7 @@
 {
   "form": "application",
   "roles": [
-    {
+    { 
       "id": "head_developer",
       "label": "Head Developer",
       "color": "#39ff4f"
