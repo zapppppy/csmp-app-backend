@@ -39,6 +39,14 @@ npm run dev
 
 The Discord webhook routing is stored in the Worker source. If you want to lock the API to one site origin, set `ALLOWED_ORIGIN` as a plain environment variable in Cloudflare.
 
+Cloudflare build settings:
+
+```txt
+Root directory: csmp-app-backend
+Build command: npm run build
+Deploy command: npm run deploy
+```
+
 Then deploy:
 
 ```bash
